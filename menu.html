@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="impressao.css" media="print">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="shortcut icon" href="imagem.ico" type="image/x-icon">
+    <title>Gerenciador de OS</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Ordem de Serviço</a></li>
+      <li><a href="#news">Recibo de Compra</a></li>
+    </ul>
+<img src="IMAGE/marcas.png" alt="logo">
+    <fieldset>
+      <legend>ORDEM DE SERVIÇO</legend>
+      <div class="local">
+        INFOCELLFA 
+        <div class="intro">Assistência Técnica em Celulares 
+        <div class="intro">Av. Borges da Costa 379 Loja - Bairro Asteca (São benedito) Santa Luzia
+        - MG </div></div>
+        <div class="intro">Telefone: (31)9 8635-6124 / 3950-0561  </div>
+        
+      </div>
+    </fieldset>
+    <div class="formulario">
+      <fieldset>
+        <legend>DADOS DO CLIENTE</legend>
+        <form>
+          Cliente: <input type="text" name="cliente_1" id="cliente_1" onkeyup="receber_cliente_1()" value=" ">
+          Telefone: <input type="tel" name="telefone_1" id="telefone_1"onkeyup="receber_telefone_1()" value="" />
+          <br><br>Endereço:<input type="text" name="endereco1" id="endereco_1"  style="width: 300px;" onkeyup="receber_endereco()" value=""> 
+          Bairro: <input type="text" name="bairro_1 " id="bairro_cliente"onkeyup="recebe_bairro_cliente()" value="">
+          <br> <br>Marca do Aparelho: <input type="text" name="marca_1" id="marca_1" onkeyup="receber_marca_1()"value="">
+          Modelo: <input type="text" name="modelo_1" id="modelo_1"  onkeyup="receber_modelo_1()"value=""/>
+          <br /><br />
+          Problema: <input type="text" name="problema_1" id="problema_1" style="width: 260px;"onkeyup="receber_problema_1()"value=""/>
+          Valor: <input type="text" name="valor_1" id="valor_1" onkeyup="receber_valor_1()"value="" />
+        </form>
+      </fieldset>
+      <fieldset class="textarea">
+        <legend>INFORMAÇÕES GERAIS</legend>
+        <div class="texto">
+          Após o prazo de 30 dias que o aparelho for REPARADO, SERÁ COBRADO
+          ALUGUEL pela permanência do aparelho que fica na guarda do
+          estabelecimento no valor de R$5,00 por dia,, quando o mesmo não for
+          retirado pelo Cliente. Isto porque o estabelecimento terá despesas e
+          responsabilidades pela guarda do APARELHO. A INFOCELLFA não se
+          responsabiliza pelas informações existente no equipamento nem por
+          evetuais danoS que venham ocorrer. AUTORIZO O DESCARTE DO APARELHO NO
+          CASO NÃO RETIRE NO PRAZO DDE 90 (noventa) DIAS a contar de HOJE,
+          DECLARO ESTAR CIENTE DAS INFORMAÇÕES ACIMA APRESENTADAS.</div>
+      </fieldset>
+    </div>
+    <div class="data">Data<input type="date" /></div>
+    <div class="assinatura">
+      <div>_______________________________</div>
+      <div class="linha1">_______________________________</div>
+    </div>
+    <div class="assinatura2">
+      <div>Assinatura do Cliente</div>
+      <div class="linha2">Assinatura do responsável</div>
+      <hr />
+    </div>
+    <br>
+<div class="corte_pagina">----------------------------------recorte aqui--------------------------------------</div>
+    <div class="formulario2">
+      <fieldset>
+        <legend>DADOS DO CLIENTE - VIA DA LOJA</legend>
+        <form>
+      <div class="cliente_2"> Cliente: <span id="recebe_valor_cliente"></span></div>
+     <div class="telefone_2">Telefone:<span id="recebe_valor_telefone" ></span></div>
+     <div  class="endereco_2">Endereço <span id="recebe_endereco"></span></div>
+     <div class="bairro_2">Bairro: <span id="recebe_bairro"></span></div>
+      <div class="aparelho">Marca do Aparelho: <span id="recebe_marca_aparelho"></span></div>
+      <div class="modelo">Modelo: <span id="recebe_valor_modelo"></span></div>
+      <div class="problema">Qual o Defeito:<span id="recebe_valor_defeito"></span></div>
+      <div class="valor">Valor: <span id="recebe_valor"></span></div>
+        
+        </form>
+      </fieldset> 
+      <div class="data">Data<input type="date" /></div>
+      <div class="assinatura">
+        <div>_______________________________</div>
+        <div class="linha1">_______________________________</div>
+      </div>
+      <div class="assinatura2">
+        <div>Assinatura do Cliente</div>
+        <div class="linha2">Assinatura do responsável</div>
+      </div>
+      <div class="formulario">
+      </fieldset>
+          <button onclick="window.print()">Imprimir / Salvar PDF</button>
+  </body>
+  <script src="script.js"></script>
+</html>

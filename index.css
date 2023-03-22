@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+fieldset{
+    margin-top: 15px;
+}
+.intro{
+    margin-top: -9px;
+}
+.local img{
+    margin-left: 550px;
+    margin-top: -90px;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(224, 224, 209);
+    margin-bottom: 15px;
+    margin-left: 77%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(59, 58, 58);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(50, 205, 50);
+}
+
+.formulario{
+    margin-top: 5px;
+}
+
+.local{
+
+margin-left: 25px;
+line-height: 29px;
+   
+}
+.local img{
+    width: 30px;   
+}
+
+.textarea{
+    margin-top: 15px;
+}
+.texto{
+    padding: calc(15px / 2);
+
+}
+.data{
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 15px;
+}
+.assinatura{
+ display: flex;
+ margin-top: 30px;
+ margin-left: 20px;
+}
+.linha1{
+margin-left: 25%;
+
+}
+.assinatura2{
+    display: flex;   
+    margin-left: 18px;
+ 
+}
+
+.linha2{
+    margin-left: 36%
+}
+.formulario2{
+    margin-top: 30px;    
+}
+.corte_pagina{
+    margin-left: 18%;
+}
+.cliente_2{
+background-color: #DCDCDC;
+width: 500px;
+}
+.endereco_2{
+background-color: #DCDCDC;
+width: 500px;
+}
+.aparelho{
+background-color: #DCDCDC;
+width: 500px; 
+}
+.problema{
+background-color: #DCDCDC;
+width: 500px;  
+}
+
+
